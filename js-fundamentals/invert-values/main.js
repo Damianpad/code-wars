@@ -13,3 +13,4 @@ console.log(invert(array));
 
 // Best practice Solution
 const invert = array => array.map(num => -num);
+
