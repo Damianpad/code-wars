@@ -3,7 +3,7 @@
 //For example: month 2 (February), is part of the first quarter; month 6 (June), is part of the second quarter; 
 //and month 11 (November), is part of the fourth quarter.
 
-const quarterOf = (month) => {
+// const quarterOf = (month) => {
     // Initial Solution
 
     // if (month >= 10 ){
@@ -17,13 +17,15 @@ const quarterOf = (month) => {
     // }
 
     // Refactored
-    return month >= 10 ? 4
-        : month >= 7 ? 3
-        : month >= 4 ? 2
-        : 1
+    // return month >= 10 ? 4
+    //     : month >= 7 ? 3
+    //     : month >= 4 ? 2
+    //     : 1
 
-    // Best Practice
-    // const quarterOf = m => Math.ceil(m/3);
-  }
+
+//   }
+
+      // Best Practice
+      const quarterOf = month => Math.ceil(month/3);
 
   console.log(quarterOf(10));
