@@ -56,3 +56,5 @@ function DNAStrand(dna) {
     C: 'G',
     G: 'C',
   }
+
+  //Created DNAStrand as a object
