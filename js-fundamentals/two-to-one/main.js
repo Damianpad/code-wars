@@ -29,6 +29,16 @@ longest(str1, str2) -> "abcdefklmopqwxy"
 
 */
 
-const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
+// const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
 
-console.log(longest("xyaabbbccccdefww", "xxxxyyyyabklmopq"));
+// console.log(longest("xyaabbbccccdefww", "xxxxyyyyabklmopq"));
+
+const longest = (s1, s2) => [... new Set(s1+s2)].sort().join('')
+
+let a = 'xyaabbbccccdefww'
+let b = 'xxxxyyyyabklmopq'
+console.log([...new Set(a+b)].sort().join(''));
+
+console.log(typeof []);
+typeof []
+// console.log(longest("xyaabbbccccdefww", "xxxxyyyyabklmopq"));
