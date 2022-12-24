@@ -24,14 +24,11 @@ n = 0 ==> [1]
 
 
 function powersOfTwo(n) {
-    let power = n.reduce(function(a,b) {
-        return a ** 2
-    })
-
-    let totalValues = []
-    power.push(totalValues)
-
-    return totalValues
+    var result = [];
+    for (var i = 0; i <= n; i++) {
+      result.push(Math.pow(2, i));
+    }
+    return result;
 }
 
 
