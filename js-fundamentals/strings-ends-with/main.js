@@ -26,3 +26,10 @@ Return True if it does
 False if not
 
 */
+
+
+function solution(str, ending){
+    return str.endsWith(ending);
+  }
+
+console.log(solution('abc', 'bc'));
