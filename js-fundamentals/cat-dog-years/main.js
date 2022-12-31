@@ -39,14 +39,22 @@ const humanYearsCatYearsDogYears = function(humanYears) {
 (2) -> [2,24,24]
 */
 
-const humanYearsCatYearsDogYears = function (humanYears) {
+// const humanYearsCatYearsDogYears = function (humanYears) {
 
-    if (humanYears === 1){
-        return 15
-    } else if (catYears === 2){
-        return 15 + 9
-    } else {
-        return (15 + 9) + (4 * humanYears)
-    }
+//     if (humanYears === 1){
+//         return 15
+//     } else if (catYears === 2){
+//         return 15 + 9
+//     } else {
+//         return (15 + 9) + (4 * humanYears)
+//     }
 
-}
+// }
+
+// Highest rated solution:
+
+var humanYearsCatYearsDogYears = function(y) {
+    if (y == 1) return [1, 15, 15]
+    if (y == 2) return [2, 24, 24]
+    return [y, (y-2) * 4 + 24, (y-2) * 5 + 24]
+  }
